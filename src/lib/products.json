@@ -1,0 +1,64 @@
+{
+	"products": [
+		{
+			"id": "1",
+			"title": "Wireless Mouse",
+			"price": 29.99,
+			"description": "A smooth, responsive wireless mouse with a comfortable grip."
+		},
+		{
+			"id": "2",
+			"title": "Mechanical Keyboard",
+			"price": 79.99,
+			"description": "A durable mechanical keyboard with customizable RGB backlighting."
+		},
+		{
+			"id": "3",
+			"title": "USB-C Hub",
+			"price": 34.99,
+			"description": "A multi-port USB-C hub with HDMI, USB 3.0, and SD card reader support."
+		},
+		{
+			"id": "4",
+			"title": "Laptop Stand",
+			"price": 25.99,
+			"description": "An adjustable laptop stand with a non-slip base for comfortable viewing."
+		},
+		{
+			"id": "5",
+			"title": "Noise-Cancelling Headphones",
+			"price": 199.99,
+			"description": "Over-ear noise-cancelling headphones with high-fidelity sound."
+		},
+		{
+			"id": "6",
+			"title": "Smartphone Tripod",
+			"price": 18.99,
+			"description": "A lightweight and portable tripod for stable smartphone photography."
+		},
+		{
+			"id": "7",
+			"title": "Portable Power Bank",
+			"price": 49.99,
+			"description": "A high-capacity power bank with fast charging and multiple USB ports."
+		},
+		{
+			"id": "8",
+			"title": "Bluetooth Speaker",
+			"price": 59.99,
+			"description": "A compact Bluetooth speaker with deep bass and long battery life."
+		},
+		{
+			"id": "9",
+			"title": "Fitness Tracker",
+			"price": 89.99,
+			"description": "A water-resistant fitness tracker with heart rate monitoring and GPS."
+		},
+		{
+			"id": "10",
+			"title": "4K Monitor",
+			"price": 399.99,
+			"description": "A 27-inch 4K monitor with vibrant colors and adjustable stand."
+		}
+	]
+}
