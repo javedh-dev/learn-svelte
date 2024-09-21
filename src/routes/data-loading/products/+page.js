@@ -1,16 +1,10 @@
-// export const load = async ({ fetch }) => {
-// 	console.log('Called load functions from +page.js');
+import Product from './product.svelte';
 
-// 	const res = await fetch('http://localhost:4000/products');
-// 	const data = await res.json();
-// 	if (res.ok) {
-// 		return {
-// 			products: data
-// 		};
-// 	} else {
-// 		return {
-// 			status: res.status,
-// 			error: new Error('Could not load the data')
-// 		};
-// 	}
-// };
+export const load = async ({ fetch }) => {
+	const res = await fetch('http://localhost:4000/products');
+	const data = await res.json();
+	return {
+		products: data,
+		Component: Product
+	};
+};

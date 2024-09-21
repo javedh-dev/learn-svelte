@@ -1,11 +1,12 @@
 <script>
+	// import Product from './product.svelte';
 	export let data;
-	const { products } = data;
+	const { products, Component } = data;
 </script>
 
 <h1>List of Products</h1>
 <ul>
 	{#each products as product}
-		<li>{product.title}</li>
+		<Component {product} />
 	{/each}
 </ul>
