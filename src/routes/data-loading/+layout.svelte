@@ -4,6 +4,7 @@
 	const { username } = data;
 </script>
 
+<a href="/data-loading">Home</a>
 <h2>Welcome {username}</h2>
 
 {#if $page.data.notification}
