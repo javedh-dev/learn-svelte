@@ -1,10 +1,11 @@
 <script>
 	import { page } from '$app/stores';
+	import { enhance } from '$app/forms';
 	export let form;
 	let redirectTo = $page.url.searchParams.get('redirectTo');
 </script>
 
-<form method="post">
+<form method="post" use:enhance>
 	<div>
 		<label for="username">Username:</label>
 		<input type="text" name="username" id="username" value={form?.username || ''} />

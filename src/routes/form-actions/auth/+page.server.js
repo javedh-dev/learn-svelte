@@ -15,7 +15,7 @@ export const actions = {
 		}
 
 		cookies.set('username', username, { path: '/', secure: false });
-		throw redirect(302, url.searchParams.get('redirectTo'));
+		throw redirect(302, url.searchParams.get('redirectTo') || '/');
 		// return { message: 'Logged In!!!' };
 	},
 	register: async ({ request, cookies }) => {
@@ -32,7 +32,7 @@ export const actions = {
 		}
 
 		cookies.set('username', username, { path: '/', secure: false });
-		throw redirect(302, url.searchParams.get('redirectTo'));
+		throw redirect(302, url.searchParams.get('redirectTo') || '/');
 		// return { message: 'Registered successfully!!!' };
 	}
 };
