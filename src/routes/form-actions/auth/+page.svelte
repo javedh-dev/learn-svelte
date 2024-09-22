@@ -1,5 +1,7 @@
 <script>
+	import { page } from '$app/stores';
 	export let form;
+	let redirectTo = $page.url.searchParams.get('redirectTo');
 </script>
 
 <form method="post">
@@ -15,8 +17,8 @@
 		<p>{form?.message || ''}</p>
 	</div>
 
-	<button formaction="?/login">Login</button>
-	<button formaction="?/register">Register</button>
+	<button formaction="?/login&redirectTo={redirectTo}">Login</button>
+	<button formaction="?/register&redirectTo={redirectTo}">Register</button>
 </form>
 
 <style>

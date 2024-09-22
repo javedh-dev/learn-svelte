@@ -1,7 +1,7 @@
-import { fail } from '@sveltejs/kit';
+import { fail, redirect } from '@sveltejs/kit';
 
 export const actions = {
-	login: async ({ request, cookies }) => {
+	login: async ({ request, cookies, url }) => {
 		const data = await request.formData();
 
 		const username = data.get('username');
@@ -15,7 +15,8 @@ export const actions = {
 		}
 
 		cookies.set('username', username, { path: '/', secure: false });
-		return { message: 'Logged In!!!' };
+		throw redirect(302, url.searchParams.get('redirectTo'));
+		// return { message: 'Logged In!!!' };
 	},
 	register: async ({ request, cookies }) => {
 		const data = await request.formData();
@@ -31,6 +32,7 @@ export const actions = {
 		}
 
 		cookies.set('username', username, { path: '/', secure: false });
-		return { message: 'Registered successfully!!!' };
+		throw redirect(302, url.searchParams.get('redirectTo'));
+		// return { message: 'Registered successfully!!!' };
 	}
 };
