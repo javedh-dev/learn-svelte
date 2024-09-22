@@ -1,13 +1,12 @@
 <script>
 	export let data;
-	const featuredProducts = data.featuredProducts;
 </script>
 
 <slot />
 
 <h1>Featured Products</h1>
 
-{#each featuredProducts as product}
+{#each data.featuredProducts as product}
 	<div class="featured-product">
 		<a href="/data-loading/products/{product.id}">
 			<h2>{product.title}</h2>
