@@ -20,3 +20,5 @@ export const load = async ({ fetch, params, url, route }) => {
 		notification
 	};
 };
+
+export const prerender = true;
