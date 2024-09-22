@@ -14,7 +14,9 @@ export const load = async ({ fetch, params, url, route }) => {
 
 	const res = await fetch(`http://localhost:4000/products/${params.productId}`);
 	const data = await res.json();
+	const notification = 'Sales on select products - 50%';
 	return {
-		product: data
+		product: data,
+		notification
 	};
 };
