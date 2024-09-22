@@ -80,5 +80,31 @@
 			"price": 399.99,
 			"description": "A 27-inch 4K monitor with vibrant colors and adjustable stand."
 		}
+	],
+	"top-active-stock": {
+		"symbol": "STOCK-A",
+		"price": 125.75
+	},
+	"top-gaining-stock": {
+		"symbol": "STOCK-B",
+		"price": 89.5
+	},
+	"top-losing-stock": {
+		"symbol": "STOCK-C",
+		"price": 56.2
+	},
+	"actively-traded-stocks": [
+		{
+			"symbol": "STOCK-D",
+			"price": 102.9
+		},
+		{
+			"symbol": "STOCK-E",
+			"price": 78.35
+		},
+		{
+			"symbol": "STOCK-F",
+			"price": 150.2
+		}
 	]
 }
