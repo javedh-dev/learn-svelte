@@ -1,4 +1,8 @@
 import { fail, redirect } from '@sveltejs/kit';
+import { DB_USER, DB_PASSWORD } from '$env/static/private';
+
+console.log('DB_USER :', DB_USER);
+console.log('DB_PASSWORD :', DB_PASSWORD);
 
 export const actions = {
 	login: async ({ request, cookies, url }) => {
