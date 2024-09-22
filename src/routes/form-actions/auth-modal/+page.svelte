@@ -5,7 +5,7 @@
 <form method="post">
 	<div>
 		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" />
+		<input type="text" name="username" id="username" value={form?.username || ''} />
 	</div>
 	<div>
 		<label for="password">Password:</label>

@@ -1,3 +1,5 @@
+import { fail } from '@sveltejs/kit';
+
 export const actions = {
 	login: async ({ request, cookies }) => {
 		const data = await request.formData();
@@ -6,10 +8,10 @@ export const actions = {
 		const password = data.get('password');
 
 		if (!username || !password) {
-			return {
-				success: false,
+			return fail(400, {
+				username,
 				message: 'Username and password are required'
-			};
+			});
 		}
 
 		cookies.set('username', username, { path: '/', secure: false });
@@ -22,10 +24,10 @@ export const actions = {
 		const password = data.get('password');
 
 		if (!username || !password) {
-			return {
-				success: false,
+			return fail(400, {
+				username,
 				message: 'Username and password are required'
-			};
+			});
 		}
 
 		cookies.set('username', username, { path: '/', secure: false });
