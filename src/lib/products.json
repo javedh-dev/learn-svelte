@@ -83,11 +83,11 @@
 	],
 	"top-active-stock": {
 		"symbol": "STOCK-A",
-		"price": 125.75
+		"price": 187.75
 	},
 	"top-gaining-stock": {
 		"symbol": "STOCK-B",
-		"price": 89.5
+		"price": 89.8
 	},
 	"top-losing-stock": {
 		"symbol": "STOCK-C",
@@ -96,11 +96,11 @@
 	"actively-traded-stocks": [
 		{
 			"symbol": "STOCK-D",
-			"price": 102.9
+			"price": 162.3
 		},
 		{
 			"symbol": "STOCK-E",
-			"price": 78.35
+			"price": 78.67
 		},
 		{
 			"symbol": "STOCK-F",
