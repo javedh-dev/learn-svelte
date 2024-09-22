@@ -60,5 +60,25 @@
 			"price": 399.99,
 			"description": "A 27-inch 4K monitor with vibrant colors and adjustable stand."
 		}
+	],
+	"featured-products": [
+		{
+			"id": "2",
+			"title": "Mechanical Keyboard",
+			"price": 79.99,
+			"description": "A durable mechanical keyboard with customizable RGB backlighting."
+		},
+		{
+			"id": "5",
+			"title": "Noise-Cancelling Headphones",
+			"price": 199.99,
+			"description": "Over-ear noise-cancelling headphones with high-fidelity sound."
+		},
+		{
+			"id": "10",
+			"title": "4K Monitor",
+			"price": 399.99,
+			"description": "A 27-inch 4K monitor with vibrant colors and adjustable stand."
+		}
 	]
 }
