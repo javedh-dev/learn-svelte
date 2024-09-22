@@ -1,33 +1,18 @@
 <script>
-	let username = '';
-	let password = '';
-	let message = '';
-
-	const handleSubmit = async () => {
-		message = '';
-		const response = await fetch('/form-actions/auth', {
-			method: 'POST',
-			body: JSON.stringify({ username, password }),
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		});
-		const responseData = await response.json();
-		message = responseData.message;
-	};
+	export let form;
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
+<form method="post">
 	<div>
 		<label for="username">Username:</label>
-		<input type="text" bind:value={username} id="username" required />
+		<input type="text" name="username" id="username" />
 	</div>
 	<div>
 		<label for="password">Password:</label>
-		<input type="password" bind:value={password} id="password" required />
+		<input type="password" name="password" id="password" />
 	</div>
 	<div>
-		<p>{message}</p>
+		<p>{form?.message || ''}</p>
 	</div>
 
 	<button type="submit">Login</button>
