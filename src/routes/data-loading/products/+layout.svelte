@@ -4,7 +4,7 @@
 
 <slot />
 
-<h1>Featured Products</h1>
+<h1>Featured Products for {data.username}</h1>
 
 {#each data.featuredProducts as product}
 	<div class="featured-product">
