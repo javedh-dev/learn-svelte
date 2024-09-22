@@ -21,4 +21,4 @@ export const load = async ({ fetch, params, url, route }) => {
 	};
 };
 
-export const prerender = true;
+export const prerender = 'auto';
