@@ -15,8 +15,8 @@
 		<p>{form?.message || ''}</p>
 	</div>
 
-	<button formaction="?/login">Login</button>
-	<button formaction="?/register">Register</button>
+	<button formaction="/form-actions/auth?/login">Login</button>
+	<button formaction="/form-actions/auth?/register">Register</button>
 </form>
 
 <style>
